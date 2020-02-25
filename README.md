@@ -14,7 +14,7 @@ No ports are mapped between the host and the container, but it wouldn't be a bad
 - `docker build -t hiddenservice.img .`
 - `docker run -d -v "${PWD}/hiddenservice:/var/www/hiddenservice" --name hiddenservice hiddenservice.img`
 
-Your .onion hostname will be listed in `./hiddenservice/hostname`, which you can access over Tor to view the content served in that directory.
+Your `.onion` hostname will be listed in `./hiddenservice/hostname`, which you can access over Tor to view the content served in that directory.
 
 ## Uninstall
 
@@ -22,6 +22,8 @@ Your .onion hostname will be listed in `./hiddenservice/hostname`, which you can
 - `docker rm hiddenservice`
 - `docker rmi hiddenservice.img`
 - `rm -rf docktor`
+
+---
 
 ### Notes
 
