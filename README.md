@@ -11,16 +11,16 @@ No ports are mapped between the host and the container, but it wouldn't be a bad
 
 - `git clone https://github.com/phx/docktor.git`
 - `cd docktor`
-- `docker build -t hiddenservice.img .`
-- `docker run -d -v "${PWD}/hiddenservice:/var/www/hiddenservice" --name hiddenservice hiddenservice.img`
+- `docker build -t docktor.img .`
+- `docker run -d -v "${PWD}/hiddenservice:/var/www/hiddenservice" --name docktor docktor.img`
 
 Your `.onion` hostname will be listed in `./hiddenservice/hostname`, which you can access over Tor to view the content served in that directory.
 
 ## Uninstall
 
-- `docker stop hiddenservice`
-- `docker rm hiddenservice`
-- `docker rmi hiddenservice.img`
+- `docker stop docktor`
+- `docker rm docktor`
+- `docker rmi docktor.img`
 - `rm -rf docktor`
 
 ---
@@ -31,9 +31,9 @@ Anytime you remove the container and start a new one using the `docker run` comm
 
 If you want to keep serving content from the same Tor domain, keep the same container and just use the normal Docker commands:
 
-- `docker stop hiddenservice`
-- `docker start hiddenservice`
-- `docker exec -it hiddenservice /bin/bash` (to exec into the container)
+- `docker stop docktor`
+- `docker start docktor`
+- `docker exec -it docktor /bin/bash` (to exec into the container)
 
 ---
 
