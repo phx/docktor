@@ -23,13 +23,6 @@ No ports are mapped between the host and the container, but it wouldn't be a bad
 
 Your `.onion` hostname will be listed in `./hiddenservice/hostname`, which you can access over Tor to view the content served in that directory.
 
-## Uninstall
-
-- `docker stop docktor`
-- `docker rm docktor`
-- `docker rmi docktor.img`
-- `rm -rf docktor`
-
 ---
 
 ### Notes
