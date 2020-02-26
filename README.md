@@ -16,11 +16,10 @@ No ports are mapped between the host and the container, but it wouldn't be a bad
 
 ## Install via DockerHub
 
-- `docker pull lphxl/docktor:latest`
 - `mkdir -p hiddenservice`
 - `touch hiddenservice/error.html`
 - `echo 'Welcome to the darkweb.' > hiddenservice/index.html`
-- `docker run -d -v "${PWD}/hiddenservice:/var/www/hiddenservice" --name docktor docktor:latest`
+- `docker run -d -v "${PWD}/hiddenservice:/var/www/hiddenservice" --name docktor lphxl/docktor:latest`
 
 Your `.onion` hostname will be listed in `./hiddenservice/hostname`, which you can access over Tor to view the content served in that directory.
 
