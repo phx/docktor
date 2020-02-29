@@ -1,5 +1,5 @@
 ![Platform: ALL](https://img.shields.io/badge/platform-ALL-green)
-![Dependencies: python3+](https://img.shields.io/badge/dependencies-docker-blue))
+![Dependencies: python3+](https://img.shields.io/badge/dependencies-docker-blue)
 ![Follow @rubynorails on Twitter](https://img.shields.io/twitter/follow/rubynorails?label=follow&style=social)
 
 
