@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 /etc/init.d/tor start &&\
 onion="$(cat "/var/lib/tor/hidden_service/hostname")"
